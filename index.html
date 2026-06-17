@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chinmay Yadav — Web Developer Portfolio showcasing skills, projects, and professional experience in modern web development.">
+    <title>Chinmay Yadav — Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">
+            <span class="logo-monogram">VP</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="greeting-wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name">
+                    Chinmay <span class="name-accent">Yadav</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-label">I build</span>
+                    <div class="hero-typewriter" id="hero-typewriter">
+                        <span class="typewriter-text" id="typewriter-text">Web Applications</span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    A passionate web developer crafting beautiful, responsive, and user-friendly digital experiences. Turning ideas into elegant solutions with clean code and modern design.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring avatar-ring-2"></div>
+                    <img src="assets/avatar.png" alt="Chinmay Yadav" class="avatar-img">
+                </div>
+                <div class="floating-badge badge-html">HTML5</div>
+                <div class="floating-badge badge-css">CSS3</div>
+                <div class="floating-badge badge-js">JS</div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About <span class="title-accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated <strong>web developer</strong> with a passion for creating interactive and visually stunning websites. I thrive on turning complex ideas into intuitive digital experiences.
+                    </p>
+                    <p>
+                        My journey into web development began with curiosity about how websites work, which quickly turned into a deep passion for coding. I've since honed my skills across frontend technologies and continue to expand my knowledge every day.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new tech trends, contributing to open-source projects, or working on personal creative projects to push my boundaries.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <!-- Education -->
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5"/>
+                            </svg>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Education</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 — Present</span>
+                                <h4>Bachelor of Technology</h4>
+                                <p>Computer Science & Engineering</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 — 2024</span>
+                                <h4>Higher Secondary Education</h4>
+                                <p>Science Stream — PCM with CS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience -->
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                        <div class="detail-content">
+                            <h3>Experience</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 — Present</span>
+                                <h4>Web Development Intern</h4>
+                                <p>Prodigy InfoTech — Building real-world web applications</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024 — 2025</span>
+                                <h4>Freelance Developer</h4>
+                                <p>Personal & client projects in frontend development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">My <span class="title-accent">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-level="90">
+                    <div class="skill-icon" style="--skill-color: #e34f26;">
+                        <span>&#60;/&#62;</span>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, SEO best practices</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 90%; --skill-color: #e34f26;"></div></div>
+                </div>
+                <div class="skill-card" data-level="85">
+                    <div class="skill-icon" style="--skill-color: #1572b6;">
+                        <span>{ }</span>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, responsive design</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 85%; --skill-color: #1572b6;"></div></div>
+                </div>
+                <div class="skill-card" data-level="80">
+                    <div class="skill-icon" style="--skill-color: #f7df1e;">
+                        <span>JS</span>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM, async/await, APIs, OOP</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 80%; --skill-color: #f7df1e;"></div></div>
+                </div>
+                <div class="skill-card" data-level="70">
+                    <div class="skill-icon" style="--skill-color: #61dafb;">
+                        <span>⚛</span>
+                    </div>
+                    <h3>React</h3>
+                    <p>Components, hooks, state management</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 70%; --skill-color: #61dafb;"></div></div>
+                </div>
+                <div class="skill-card" data-level="75">
+                    <div class="skill-icon" style="--skill-color: #f05032;">
+                        <span>⎇</span>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version control, branching, collaboration</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 75%; --skill-color: #f05032;"></div></div>
+                </div>
+                <div class="skill-card" data-level="65">
+                    <div class="skill-icon" style="--skill-color: #339933;">
+                        <span>▲</span>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Server-side JavaScript, REST APIs, Express</p>
+                    <div class="skill-bar"><div class="skill-fill" style="--fill: 65%; --skill-color: #339933;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Featured <span class="title-accent">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-info">
+                        <h3>Interactive Navigation Menu</h3>
+                        <p>A responsive, fixed-position navigation menu that dynamically changes visual styles based on scroll position and hover interactions with smooth transitions.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="View Code">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="project-link" title="Live Demo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-info">
+                        <h3>Chrono Stopwatch</h3>
+                        <p>A precision stopwatch application with circular progress ring, lap tracking with best/worst highlights, and keyboard shortcuts for seamless usage.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="View Code">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="project-link" title="Live Demo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <div class="project-info">
+                        <h3>Tic Tac Toe Ultimate</h3>
+                        <p>An interactive tic-tac-toe game with Player vs Player and unbeatable AI (Minimax algorithm) modes, score tracking, and animated win detection.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="View Code">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="project-link" title="Live Demo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">04</div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>This very portfolio — a modern, animated single-page website built from scratch with smooth scroll, typewriter effect, and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="View Code">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="#" class="project-link" title="Live Demo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Get In <span class="title-accent">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:chinmayyadav@example.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">chinmayyadav@example.com</span>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/chinmayyadav</span>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/chinmay yadav</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by <strong>Chinmay Yadav</strong> — &copy; 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
